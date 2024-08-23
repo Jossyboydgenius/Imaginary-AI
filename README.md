@@ -18,6 +18,9 @@ bun dev
 ```bash
 npx shadcn-ui@latest init
 ```
+```bash
+npm i zustand
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
