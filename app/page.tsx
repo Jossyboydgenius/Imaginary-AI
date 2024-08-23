@@ -11,8 +11,7 @@ export default function Home() {
         activeTag: "all",
         activeColor: "green",
         activeImage: "",
-      }}
-    >
+      }}>
       <LayerStore.Provider
         initialValue={{
           layerComparisonMode: false,
@@ -25,12 +24,9 @@ export default function Home() {
               publicId: "",
             },
           ],
-        }}
-      >
+        }}>
         <Editor />
       </LayerStore.Provider>
     </ImageStore.Provider>
   )
 }
-
-
