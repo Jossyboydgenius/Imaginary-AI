@@ -19,7 +19,10 @@ bun dev
 npx shadcn-ui@latest init
 ```
 ```bash
-npm i zustand
+npx shadcn-ui@latest init
+```
+```bash
+npm i react-dropzone react-hook-form
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
