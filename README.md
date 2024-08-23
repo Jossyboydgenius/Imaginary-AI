@@ -27,6 +27,9 @@ npm i zustand
 ```bash
 npm i react-dropzone react-hook-form
 ```
+```bash
+npm i next-safe-action
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
