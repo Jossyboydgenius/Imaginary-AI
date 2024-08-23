@@ -29,10 +29,10 @@ export default function UploadImage() {
       if (acceptedFiles.length) {
         const formData = new FormData()
         formData.append("image", acceptedFiles[0])
-        //Generate Object url
+        // Generate Object url
         const objectUrl = URL.createObjectURL(acceptedFiles[0])
         setGenerating(true)
-
+        // State management to create a new layers, set the active layer, set the image as the active layer
         updateLayer({
           id: activeLayer.id,
           url: objectUrl,
