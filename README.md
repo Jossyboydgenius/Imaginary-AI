@@ -19,7 +19,10 @@ bun dev
 npx shadcn-ui@latest init
 ```
 ```bash
-npx shadcn-ui@latest init
+npm i zod
+```
+```bash
+npm i zustand
 ```
 ```bash
 npm i react-dropzone react-hook-form
