@@ -94,7 +94,7 @@ export default function UploadImage() {
                 : "Start by uploading an image"}
             </p>
             <p className="text-muted-foreground">
-              Supported Formats .jpeg .jpg .png .webp
+              Supported formats (.jpeg .jpg .png .webp)
             </p>
           </div>
         </CardContent>
