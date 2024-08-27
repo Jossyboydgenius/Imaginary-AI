@@ -80,9 +80,9 @@ export default function UploadVideo() {
           <p className="text-muted-foreground text-2xl">
             {isDragActive
               ? "Drop your video here!"
-              : "Start by uploading a video"}
+              : "Get started by uploading a video"}
           </p>
-          <p className="text-muted-foreground">Supported Format: .mp4</p>
+          <p className="text-muted-foreground">Supported format: (.mp4)</p>
         </div>
       </CardContent>
     </Card>
