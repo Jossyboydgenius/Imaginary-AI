@@ -91,7 +91,7 @@ export default function UploadImage() {
             <p className="text-muted-foreground text-2xl">
               {isDragActive
                 ? "Drop your image here!"
-                : "Begin by uploading an image"}
+                : "Get started by uploading an image"}
             </p>
             <p className="text-muted-foreground">
               Supported formats: (.jpeg .jpg .png .webp)
