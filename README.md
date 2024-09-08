@@ -31,7 +31,13 @@ npm i react-dropzone react-hook-form
 npm i next-safe-action
 ```
 ```bash
-npx shadcn-ui@latest add card
+npm i next-themes
+```
+```bash
+npx shadcn@latest add card
+```
+```bash
+npx shadcn@latest add dialog
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
