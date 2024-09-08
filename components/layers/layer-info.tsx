@@ -13,7 +13,7 @@ import { Ellipsis, Trash } from "lucide-react"
 import { Layer, useLayerStore } from "@/lib/layer-store"
 import { useImageStore } from "@/lib/store"
 
-export default function LayerInfo({
+export default function LayerInfo({  
   layer,
   layerIndex,
 }: {
