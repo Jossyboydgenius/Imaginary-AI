@@ -37,7 +37,7 @@ export const uploadVideo = actionClient
         const uploadStream = cloudinary.uploader.upload_stream(
           {
             resource_type: "video",
-            upload_preset: "restyled",
+            upload_preset: "ImaginaryAI",
             use_filename: true,
             unique_filename: false,
             filename_override: file.name,
@@ -60,3 +60,4 @@ export const uploadVideo = actionClient
       return { error: "Error processing file" }
     }
   })
+  
