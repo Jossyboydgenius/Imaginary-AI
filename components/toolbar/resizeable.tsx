@@ -10,13 +10,18 @@ export default function Resizable() {
   const setImageHeight = useImageStore((state) => state.setImageHeight)
   const setImageWidth = useImageStore((state) => state.setImageWidth)
 
-  const handleDragEnd = (e) => {}
+  const handleDragEnd = (e: any) => {
+    // You can implement the logic for updating image dimensions here
+    // For example:
+    // setImageWidth(currentWidth + e.offset.x)
+    // setImageHeight(currentHeight + e.offset.y)
+  }
 
   return (
     <motion.div className="border-4 relative w-full h-full ">
       {/* Right overlay */}
       <motion.div
-        className=" top-0 h-full bg-black opacity-50 flex items-center justify-center text-white text-lg"
+        className="top-0 h-full bg-black opacity-50 flex items-center justify-center text-white text-lg"
         style={{
           width: useTransform(x, (latest) => Math.max(0, latest)),
         }}
@@ -26,13 +31,13 @@ export default function Resizable() {
         )}
       </motion.div>
       <motion.div
-        className=" top-0 h-full bg-black opacity-50 flex items-center justify-center text-white text-lg"
+        className="top-0 h-full bg-black opacity-50 flex items-center justify-center text-white text-lg"
         style={{
           width: useTransform(x, (latest) => Math.max(0, -latest)),
         }}
       >
         {useTransform(x, (latest) =>
-          latest > 0 ? `+${Math.round(latest)}px` : ""
+          latest < 0 ? `${Math.round(latest)}px` : ""
         )}
       </motion.div>
       {/* Right resize handle */}
@@ -73,13 +78,12 @@ export default function Resizable() {
         }}
       >
         {useTransform(y, (latest) =>
-          latest < 0 ? `+${Math.round(-latest)}px` : ""
+          latest > 0 ? `+${Math.round(latest)}px` : ""
         )}
       </motion.div>
 
       {/* Border around the original image */}
-      <div className="absolute inset-0  border border-primary pointer-events-none" />
+      <div className="absolute inset-0 border border-primary pointer-events-none" />
     </motion.div>
   )
 }
-
