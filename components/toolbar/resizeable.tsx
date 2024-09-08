@@ -82,3 +82,4 @@ export default function Resizable() {
     </motion.div>
   )
 }
+
