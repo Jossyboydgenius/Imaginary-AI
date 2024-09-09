@@ -37,7 +37,7 @@ export const uploadVideo = actionClient
         const uploadStream = cloudinary.uploader.upload_stream(
           {
             resource_type: "video",
-            upload_preset: "ImaginaryAI",
+            upload_preset: "dc2yzmsnc",
             use_filename: true,
             unique_filename: false,
             filename_override: file.name,
