@@ -5,7 +5,7 @@ import { actionClient } from "@/server/safe-action"
 import z from "zod"
 
 cloudinary.config({
-  cloud_name: "dc2yzmsnc",
+  cloud_name: process.env.CLOUDINARY_NAME, // Updated to use environment variable
   api_key: process.env.CLOUDINARY_KEY,
   api_secret: process.env.CLOUDINARY_SECRET,
 })
@@ -36,7 +36,7 @@ export const uploadImage = actionClient
       return new Promise<UploadResult>((resolve, reject) => {
         const uploadStream = cloudinary.uploader.upload_stream(
           {
-            upload_preset: "ImaginaryAI",
+            upload_preset: "your_upload_preset", // Update this line with your actual upload preset
             use_filename: true,
             unique_filename: false,
             filename_override: file.name,
@@ -59,3 +59,4 @@ export const uploadImage = actionClient
       return { error: "Error processing file" }
     }
   })
+  
